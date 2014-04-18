@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		468DCD721900E5EA00217B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD711900E5EA00217B2F /* Foundation.framework */; };
+		468DCD741900E5EA00217B2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD731900E5EA00217B2F /* CoreGraphics.framework */; };
+		468DCD761900E5EA00217B2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD751900E5EA00217B2F /* UIKit.framework */; };
+		468DCD7C1900E5EA00217B2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 468DCD7A1900E5EA00217B2F /* InfoPlist.strings */; };
+		468DCD7E1900E5EA00217B2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD7D1900E5EA00217B2F /* main.m */; };
+		468DCD821900E5EA00217B2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD811900E5EA00217B2F /* AppDelegate.m */; };
+		468DCD851900E5EA00217B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468DCD831900E5EA00217B2F /* Main.storyboard */; };
+		468DCD881900E5EA00217B2F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD871900E5EA00217B2F /* FirstViewController.m */; };
+		468DCD8B1900E5EA00217B2F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD8A1900E5EA00217B2F /* SecondViewController.m */; };
+		468DCD8D1900E5EA00217B2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468DCD8C1900E5EA00217B2F /* Images.xcassets */; };
+		468DCD941900E5EA00217B2F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD931900E5EA00217B2F /* XCTest.framework */; };
+		468DCD951900E5EA00217B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD711900E5EA00217B2F /* Foundation.framework */; };
+		468DCD961900E5EA00217B2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD751900E5EA00217B2F /* UIKit.framework */; };
+		468DCD9E1900E5EA00217B2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 468DCD9C1900E5EA00217B2F /* InfoPlist.strings */; };
+		468DCDA01900E5EA00217B2F /* Corvallis_Bus_Hackathon_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD9F1900E5EA00217B2F /* Corvallis_Bus_Hackathon_ExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		468DCD971900E5EA00217B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 468DCD661900E5EA00217B2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 468DCD6D1900E5EA00217B2F;
+			remoteInfo = "Corvallis-Bus-Hackathon-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		468DCD6E1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corvallis-Bus-Hackathon-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		468DCD711900E5EA00217B2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		468DCD731900E5EA00217B2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		468DCD751900E5EA00217B2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		468DCD791900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Corvallis-Bus-Hackathon-Example-Info.plist"; sourceTree = "<group>"; };
+		468DCD7B1900E5EA00217B2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		468DCD7D1900E5EA00217B2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		468DCD7F1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Corvallis-Bus-Hackathon-Example-Prefix.pch"; sourceTree = "<group>"; };
+		468DCD801900E5EA00217B2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		468DCD811900E5EA00217B2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		468DCD841900E5EA00217B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		468DCD861900E5EA00217B2F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		468DCD871900E5EA00217B2F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		468DCD891900E5EA00217B2F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		468DCD8A1900E5EA00217B2F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		468DCD8C1900E5EA00217B2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		468DCD921900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corvallis-Bus-Hackathon-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		468DCD931900E5EA00217B2F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		468DCD9B1900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Corvallis-Bus-Hackathon-ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		468DCD9D1900E5EA00217B2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		468DCD9F1900E5EA00217B2F /* Corvallis_Bus_Hackathon_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Corvallis_Bus_Hackathon_ExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		468DCD6B1900E5EA00217B2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DCD741900E5EA00217B2F /* CoreGraphics.framework in Frameworks */,
+				468DCD761900E5EA00217B2F /* UIKit.framework in Frameworks */,
+				468DCD721900E5EA00217B2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		468DCD8F1900E5EA00217B2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DCD941900E5EA00217B2F /* XCTest.framework in Frameworks */,
+				468DCD961900E5EA00217B2F /* UIKit.framework in Frameworks */,
+				468DCD951900E5EA00217B2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		468DCD651900E5EA00217B2F = {
+			isa = PBXGroup;
+			children = (
+				468DCD771900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example */,
+				468DCD991900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests */,
+				468DCD701900E5EA00217B2F /* Frameworks */,
+				468DCD6F1900E5EA00217B2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		468DCD6F1900E5EA00217B2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				468DCD6E1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example.app */,
+				468DCD921900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		468DCD701900E5EA00217B2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				468DCD711900E5EA00217B2F /* Foundation.framework */,
+				468DCD731900E5EA00217B2F /* CoreGraphics.framework */,
+				468DCD751900E5EA00217B2F /* UIKit.framework */,
+				468DCD931900E5EA00217B2F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		468DCD771900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example */ = {
+			isa = PBXGroup;
+			children = (
+				468DCD801900E5EA00217B2F /* AppDelegate.h */,
+				468DCD811900E5EA00217B2F /* AppDelegate.m */,
+				468DCD831900E5EA00217B2F /* Main.storyboard */,
+				468DCD861900E5EA00217B2F /* FirstViewController.h */,
+				468DCD871900E5EA00217B2F /* FirstViewController.m */,
+				468DCD891900E5EA00217B2F /* SecondViewController.h */,
+				468DCD8A1900E5EA00217B2F /* SecondViewController.m */,
+				468DCD8C1900E5EA00217B2F /* Images.xcassets */,
+				468DCD781900E5EA00217B2F /* Supporting Files */,
+			);
+			path = "Corvallis-Bus-Hackathon-Example";
+			sourceTree = "<group>";
+		};
+		468DCD781900E5EA00217B2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				468DCD791900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example-Info.plist */,
+				468DCD7A1900E5EA00217B2F /* InfoPlist.strings */,
+				468DCD7D1900E5EA00217B2F /* main.m */,
+				468DCD7F1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		468DCD991900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				468DCD9F1900E5EA00217B2F /* Corvallis_Bus_Hackathon_ExampleTests.m */,
+				468DCD9A1900E5EA00217B2F /* Supporting Files */,
+			);
+			path = "Corvallis-Bus-Hackathon-ExampleTests";
+			sourceTree = "<group>";
+		};
+		468DCD9A1900E5EA00217B2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				468DCD9B1900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests-Info.plist */,
+				468DCD9C1900E5EA00217B2F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		468DCD6D1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468DCDA31900E5EA00217B2F /* Build configuration list for PBXNativeTarget "Corvallis-Bus-Hackathon-Example" */;
+			buildPhases = (
+				468DCD6A1900E5EA00217B2F /* Sources */,
+				468DCD6B1900E5EA00217B2F /* Frameworks */,
+				468DCD6C1900E5EA00217B2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Corvallis-Bus-Hackathon-Example";
+			productName = "Corvallis-Bus-Hackathon-Example";
+			productReference = 468DCD6E1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		468DCD911900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468DCDA61900E5EA00217B2F /* Build configuration list for PBXNativeTarget "Corvallis-Bus-Hackathon-ExampleTests" */;
+			buildPhases = (
+				468DCD8E1900E5EA00217B2F /* Sources */,
+				468DCD8F1900E5EA00217B2F /* Frameworks */,
+				468DCD901900E5EA00217B2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				468DCD981900E5EA00217B2F /* PBXTargetDependency */,
+			);
+			name = "Corvallis-Bus-Hackathon-ExampleTests";
+			productName = "Corvallis-Bus-Hackathon-ExampleTests";
+			productReference = 468DCD921900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		468DCD661900E5EA00217B2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Russell Barnes";
+				TargetAttributes = {
+					468DCD911900E5EA00217B2F = {
+						TestTargetID = 468DCD6D1900E5EA00217B2F;
+					};
+				};
+			};
+			buildConfigurationList = 468DCD691900E5EA00217B2F /* Build configuration list for PBXProject "Corvallis-Bus-Hackathon-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 468DCD651900E5EA00217B2F;
+			productRefGroup = 468DCD6F1900E5EA00217B2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				468DCD6D1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example */,
+				468DCD911900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		468DCD6C1900E5EA00217B2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DCD8D1900E5EA00217B2F /* Images.xcassets in Resources */,
+				468DCD7C1900E5EA00217B2F /* InfoPlist.strings in Resources */,
+				468DCD851900E5EA00217B2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		468DCD901900E5EA00217B2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DCD9E1900E5EA00217B2F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		468DCD6A1900E5EA00217B2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DCD8B1900E5EA00217B2F /* SecondViewController.m in Sources */,
+				468DCD821900E5EA00217B2F /* AppDelegate.m in Sources */,
+				468DCD881900E5EA00217B2F /* FirstViewController.m in Sources */,
+				468DCD7E1900E5EA00217B2F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		468DCD8E1900E5EA00217B2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DCDA01900E5EA00217B2F /* Corvallis_Bus_Hackathon_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		468DCD981900E5EA00217B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 468DCD6D1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example */;
+			targetProxy = 468DCD971900E5EA00217B2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		468DCD7A1900E5EA00217B2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				468DCD7B1900E5EA00217B2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		468DCD831900E5EA00217B2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				468DCD841900E5EA00217B2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		468DCD9C1900E5EA00217B2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				468DCD9D1900E5EA00217B2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		468DCDA11900E5EA00217B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		468DCDA21900E5EA00217B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		468DCDA41900E5EA00217B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Prefix.pch";
+				INFOPLIST_FILE = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		468DCDA51900E5EA00217B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Prefix.pch";
+				INFOPLIST_FILE = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		468DCDA71900E5EA00217B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Corvallis-Bus-Hackathon-Example.app/Corvallis-Bus-Hackathon-Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Corvallis-Bus-Hackathon-ExampleTests/Corvallis-Bus-Hackathon-ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		468DCDA81900E5EA00217B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Corvallis-Bus-Hackathon-Example.app/Corvallis-Bus-Hackathon-Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Prefix.pch";
+				INFOPLIST_FILE = "Corvallis-Bus-Hackathon-ExampleTests/Corvallis-Bus-Hackathon-ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		468DCD691900E5EA00217B2F /* Build configuration list for PBXProject "Corvallis-Bus-Hackathon-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				468DCDA11900E5EA00217B2F /* Debug */,
+				468DCDA21900E5EA00217B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		468DCDA31900E5EA00217B2F /* Build configuration list for PBXNativeTarget "Corvallis-Bus-Hackathon-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				468DCDA41900E5EA00217B2F /* Debug */,
+				468DCDA51900E5EA00217B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		468DCDA61900E5EA00217B2F /* Build configuration list for PBXNativeTarget "Corvallis-Bus-Hackathon-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				468DCDA71900E5EA00217B2F /* Debug */,
+				468DCDA81900E5EA00217B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 468DCD661900E5EA00217B2F /* Project object */;
+}
