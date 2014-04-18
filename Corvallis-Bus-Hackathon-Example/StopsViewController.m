@@ -73,17 +73,16 @@
         
         // --- Plot each bus stop on the map ---
         
-        int len = [self.stops count];
-        for (int i = 0; i < len; i++) {
+        for (NSDictionary * stop in self.stops) {
             GMSMarker *marker = [[GMSMarker alloc] init];
             
             // Set the marker's location to that of the bus stop:
             marker.position =
-            CLLocationCoordinate2DMake([[[self.stops objectAtIndex:i] objectForKey:@"Lat"] floatValue],
-                                       [[[self.stops objectAtIndex:i] objectForKey:@"Long"] floatValue]);
+            CLLocationCoordinate2DMake([[stop objectForKey:@"Lat"] floatValue],
+                                       [[stop objectForKey:@"Long"] floatValue]);
             
             // Set marker properties
-            marker.snippet = [[self.stops objectAtIndex:i] objectForKey:@"Name"];
+            marker.snippet = [stop objectForKey:@"Name"];
             marker.appearAnimation = kGMSMarkerAnimationPop;
             marker.map = mapView;
         }

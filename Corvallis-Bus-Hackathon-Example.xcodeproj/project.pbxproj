@@ -212,6 +212,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Russell Barnes";
 				TargetAttributes = {
+					468DCD6D1900E5EA00217B2F = {
+						DevelopmentTeam = XHYE9DWSBD;
+					};
 					468DCD911900E5EA00217B2F = {
 						TestTargetID = 468DCD6D1900E5EA00217B2F;
 					};
@@ -424,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Prefix.pch";
 				INFOPLIST_FILE = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Info.plist";
@@ -438,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Prefix.pch";
 				INFOPLIST_FILE = "Corvallis-Bus-Hackathon-Example/Corvallis-Bus-Hackathon-Example-Info.plist";

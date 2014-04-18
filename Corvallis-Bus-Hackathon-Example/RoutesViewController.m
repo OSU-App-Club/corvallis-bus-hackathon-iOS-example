@@ -73,18 +73,16 @@
         self.view = mapView;
         
         // --- Plot each bus route on the map ---
-        
-        int len = [self.routes count];
-        for (int i = 0; i < len; i++) {
+        for (NSDictionary *route in self.routes) {
             
             // Set the polyline's path
-            GMSPolyline *polyline = [GMSPolyline polylineWithPath:[GMSPath pathFromEncodedPath:[[self.routes objectAtIndex:i] objectForKey:@"Polyline"]]];
+            GMSPolyline *polyline = [GMSPolyline polylineWithPath:[GMSPath pathFromEncodedPath:[route objectForKey:@"Polyline"]]];
             
             polyline.strokeWidth = 5.f;
             polyline.map = mapView;
             
             // Convert color from hex string (i.e. #RRGGBB)
-            NSScanner *scanner = [NSScanner scannerWithString:self.routes[i][@"Color"]];
+            NSScanner *scanner = [NSScanner scannerWithString:route[@"Color"]];
             unsigned rgbValue = 0;
             [scanner scanHexInt:&rgbValue];
             polyline.strokeColor = [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
