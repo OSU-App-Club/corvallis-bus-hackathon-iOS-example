@@ -9,5 +9,7 @@ The basic documentation can be found on [GoDoc](http://godoc.org/github.com/OSU-
 
 ## Directions
 
-Please open the file **Corvallis-Bus-Hackathon-Example.xcworkspace** after downloading this project.
+1. Run `pod install` in terminal
+    * if you have not install cocoapods, run `sudo gem install cocoapods` first
+2. Open the file **Corvallis-Bus-Hackathon-Example.xcworkspace**
 
