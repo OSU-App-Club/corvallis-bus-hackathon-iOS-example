@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC7CB529F154982B5FA32FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 247D872DD43B4912AE8E5614 /* libPods.a */; };
 		468DCD721900E5EA00217B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD711900E5EA00217B2F /* Foundation.framework */; };
 		468DCD741900E5EA00217B2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD731900E5EA00217B2F /* CoreGraphics.framework */; };
 		468DCD761900E5EA00217B2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD751900E5EA00217B2F /* UIKit.framework */; };
@@ -14,8 +15,8 @@
 		468DCD7E1900E5EA00217B2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD7D1900E5EA00217B2F /* main.m */; };
 		468DCD821900E5EA00217B2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD811900E5EA00217B2F /* AppDelegate.m */; };
 		468DCD851900E5EA00217B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468DCD831900E5EA00217B2F /* Main.storyboard */; };
-		468DCD881900E5EA00217B2F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD871900E5EA00217B2F /* FirstViewController.m */; };
-		468DCD8B1900E5EA00217B2F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD8A1900E5EA00217B2F /* SecondViewController.m */; };
+		468DCD881900E5EA00217B2F /* StopsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD871900E5EA00217B2F /* StopsViewController.m */; };
+		468DCD8B1900E5EA00217B2F /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468DCD8A1900E5EA00217B2F /* RoutesViewController.m */; };
 		468DCD8D1900E5EA00217B2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468DCD8C1900E5EA00217B2F /* Images.xcassets */; };
 		468DCD941900E5EA00217B2F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD931900E5EA00217B2F /* XCTest.framework */; };
 		468DCD951900E5EA00217B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468DCD711900E5EA00217B2F /* Foundation.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		247D872DD43B4912AE8E5614 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		468DCD6E1900E5EA00217B2F /* Corvallis-Bus-Hackathon-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corvallis-Bus-Hackathon-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		468DCD711900E5EA00217B2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		468DCD731900E5EA00217B2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,16 +48,17 @@
 		468DCD801900E5EA00217B2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		468DCD811900E5EA00217B2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		468DCD841900E5EA00217B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		468DCD861900E5EA00217B2F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		468DCD871900E5EA00217B2F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		468DCD891900E5EA00217B2F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		468DCD8A1900E5EA00217B2F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		468DCD861900E5EA00217B2F /* StopsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopsViewController.h; sourceTree = "<group>"; };
+		468DCD871900E5EA00217B2F /* StopsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopsViewController.m; sourceTree = "<group>"; };
+		468DCD891900E5EA00217B2F /* RoutesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
+		468DCD8A1900E5EA00217B2F /* RoutesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
 		468DCD8C1900E5EA00217B2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		468DCD921900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Corvallis-Bus-Hackathon-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		468DCD931900E5EA00217B2F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		468DCD9B1900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Corvallis-Bus-Hackathon-ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		468DCD9D1900E5EA00217B2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		468DCD9F1900E5EA00217B2F /* Corvallis_Bus_Hackathon_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Corvallis_Bus_Hackathon_ExampleTests.m; sourceTree = "<group>"; };
+		DBFCDDCC88B0409EB5834449 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 				468DCD741900E5EA00217B2F /* CoreGraphics.framework in Frameworks */,
 				468DCD761900E5EA00217B2F /* UIKit.framework in Frameworks */,
 				468DCD721900E5EA00217B2F /* Foundation.framework in Frameworks */,
+				3BC7CB529F154982B5FA32FC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +93,7 @@
 				468DCD991900E5EA00217B2F /* Corvallis-Bus-Hackathon-ExampleTests */,
 				468DCD701900E5EA00217B2F /* Frameworks */,
 				468DCD6F1900E5EA00217B2F /* Products */,
+				DBFCDDCC88B0409EB5834449 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +113,7 @@
 				468DCD731900E5EA00217B2F /* CoreGraphics.framework */,
 				468DCD751900E5EA00217B2F /* UIKit.framework */,
 				468DCD931900E5EA00217B2F /* XCTest.framework */,
+				247D872DD43B4912AE8E5614 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,10 +124,10 @@
 				468DCD801900E5EA00217B2F /* AppDelegate.h */,
 				468DCD811900E5EA00217B2F /* AppDelegate.m */,
 				468DCD831900E5EA00217B2F /* Main.storyboard */,
-				468DCD861900E5EA00217B2F /* FirstViewController.h */,
-				468DCD871900E5EA00217B2F /* FirstViewController.m */,
-				468DCD891900E5EA00217B2F /* SecondViewController.h */,
-				468DCD8A1900E5EA00217B2F /* SecondViewController.m */,
+				468DCD861900E5EA00217B2F /* StopsViewController.h */,
+				468DCD871900E5EA00217B2F /* StopsViewController.m */,
+				468DCD891900E5EA00217B2F /* RoutesViewController.h */,
+				468DCD8A1900E5EA00217B2F /* RoutesViewController.m */,
 				468DCD8C1900E5EA00217B2F /* Images.xcassets */,
 				468DCD781900E5EA00217B2F /* Supporting Files */,
 			);
@@ -164,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 468DCDA31900E5EA00217B2F /* Build configuration list for PBXNativeTarget "Corvallis-Bus-Hackathon-Example" */;
 			buildPhases = (
+				92A6D6324F47406DA225811F /* Check Pods Manifest.lock */,
 				468DCD6A1900E5EA00217B2F /* Sources */,
 				468DCD6B1900E5EA00217B2F /* Frameworks */,
 				468DCD6C1900E5EA00217B2F /* Resources */,
+				12EEE25423A541399890685E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,14 +257,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12EEE25423A541399890685E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A6D6324F47406DA225811F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		468DCD6A1900E5EA00217B2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468DCD8B1900E5EA00217B2F /* SecondViewController.m in Sources */,
+				468DCD8B1900E5EA00217B2F /* RoutesViewController.m in Sources */,
 				468DCD821900E5EA00217B2F /* AppDelegate.m in Sources */,
-				468DCD881900E5EA00217B2F /* FirstViewController.m in Sources */,
+				468DCD881900E5EA00217B2F /* StopsViewController.m in Sources */,
 				468DCD7E1900E5EA00217B2F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +420,7 @@
 		};
 		468DCDA41900E5EA00217B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFCDDCC88B0409EB5834449 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -392,6 +434,7 @@
 		};
 		468DCDA51900E5EA00217B2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFCDDCC88B0409EB5834449 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -462,6 +505,7 @@
 				468DCDA51900E5EA00217B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		468DCDA61900E5EA00217B2F /* Build configuration list for PBXNativeTarget "Corvallis-Bus-Hackathon-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +514,7 @@
 				468DCDA81900E5EA00217B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
