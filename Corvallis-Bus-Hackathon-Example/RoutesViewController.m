@@ -9,6 +9,10 @@
 #import "RoutesViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 
+#define CORVALLIS_LAT 44.571319
+#define CORVALLIS_LONG -123.275147
+
+
 @interface RoutesViewController ()
 
 @property (nonatomic, strong) NSArray *routes;
@@ -62,8 +66,8 @@
     [[NSOperationQueue mainQueue] addOperationWithBlock:^ {
         
         // Initialize the map
-        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:44.571319
-                                                                longitude:-123.275147
+        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: CORVALLIS_LAT
+                                                                longitude: CORVALLIS_LONG
                                                                      zoom:12];
         GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
         self.view = mapView;
@@ -76,46 +80,17 @@
             // Set the polyline's path
             GMSPolyline *polyline = [GMSPolyline polylineWithPath:[GMSPath pathFromEncodedPath:[[self.routes objectAtIndex:i] objectForKey:@"Polyline"]]];
             
-            polyline.strokeColor = [self randomColor];
             polyline.strokeWidth = 5.f;
             polyline.map = mapView;
+            
+            // Convert color from hex string (i.e. #RRGGBB)
+            NSScanner *scanner = [NSScanner scannerWithString:self.routes[i][@"Color"]];
+            unsigned rgbValue = 0;
+            [scanner scanHexInt:&rgbValue];
+            polyline.strokeColor = [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+
         }
     }];
-}
-
-- (UIColor *)randomColor
-{
-    // Thanks to https://github.com/kylefox for this code!
-    /*
-     
-     Distributed under The MIT License:
-     http://opensource.org/licenses/mit-license.php
-     
-     Permission is hereby granted, free of charge, to any person obtaining
-     a copy of this software and associated documentation files (the
-     "Software"), to deal in the Software without restriction, including
-     without limitation the rights to use, copy, modify, merge, publish,
-     distribute, sublicense, and/or sell copies of the Software, and to
-     permit persons to whom the Software is furnished to do so, subject to
-     the following conditions:
-     
-     The above copyright notice and this permission notice shall be
-     included in all copies or substantial portions of the Software.
-     
-     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-     EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-     NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-     LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-     OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-     WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-     */
-    
-    CGFloat hue = ( arc4random() % 256 / 256.0 );  //  0.0 to 1.0
-    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
-    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
-    UIColor *color = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
-    return color;
 }
 
 - (void)didReceiveMemoryWarning
