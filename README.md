@@ -7,3 +7,7 @@ An iOS app that illustrates a few of the basic API calls of the [Corvallis Bus S
 
 The basic documentation can be found on [GoDoc](http://godoc.org/github.com/OSU-App-Club/corvallis-bus-server).
 
+## Directions
+
+Please open the file **Corvallis-Bus-Hackathon-Example.xcworkspace** after downloading this project.
+
